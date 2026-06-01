@@ -1,0 +1,22 @@
+
+
+
+
+[{
+  "label": "Debug native binary",
+  "build": {
+    "command": "sh",
+    "args": ["/Users/user/Projects/novsu/novsudbcurs/env.sh"],
+    "cwd": "$ZED_WORKTREE_ROOT"
+  },
+  "preRunCommands": [
+    "command script import ~/Projects/QtFormatters.py",
+    "command source ~/Projects/QtFormatters.lldb"
+  ],
+  "envFile": "$ZED_WORKTREE_ROOT/.env",
+  "cwd": "$ZED_WORKTREE_ROOT/build",
+  "program": "$ZED_WORKTREE_ROOT/build/StudentAttendanceSystem.app/Contents/MacOS/StudentAttendanceSystem",
+  "request": "launch",
+  "adapter": "CodeLLDB",
+  "waitFor": true
+}]
